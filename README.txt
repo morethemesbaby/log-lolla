@@ -1,5 +1,5 @@
 === Log Lolla ===
-Contributors: the Mo' Themes Baby team
+Contributors: The More Themes Baby team
 Requires at least: WordPress 4.7
 Tested up to: WordPress 5.0-trunk
 Version: 1.0
@@ -9,17 +9,15 @@ Tags: one-column
 
 == Description ==
 
-Log Lolla is a classic blog theme bringing back the joy of blogging.
+Log Lolla is a classic blog theme with brutalist design.
 
-It supports all default post formats (image, gallery, video, chat, etc) to let you freely add content — whatever content you want.
+It brings back the joy of blogging and is meant to create knowledge from news.
 
-It was created to document the everydays of a small studio, to showcase the design and technical thinking behind the products.
+It supports all default post formats—aside, gallery, link, image, quote, status, video, chat, audio—to let you freely add content. Whatever content you want.
 
-The design is clean and simple, yet following a new aesthetics.
-One of our websites was featured on Brutalist Websites.
-This theme resembles the same techniques and design elements to delight visitors looking for something new.
+Log Lolla aims to be the single destination, the hub of all content you publish on the web. Instead of scattering your thoughts, inspiration, fun, things to learn, status updates—you name it—on third party networks like Twitter, Tumblr, Instagram—you can collect them into a single space and distribute anywhere.
 
-For more information about Log Lolla please go to https://mothemes.baby/log-lolla/.
+For more information about Log Lolla please go to https://morethemes.baby/log-lolla-demo/.
 
 == Installation ==
 
@@ -31,7 +29,7 @@ For more information about Log Lolla please go to https://mothemes.baby/log-loll
 
 == Copyright ==
 
-Log Lolla WordPress Theme, Copyright 2017 mothemes.baby
+Log Lolla WordPress Theme, Copyright 2017 morethemes.baby
 Log Lolla is distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify
@@ -65,6 +63,6 @@ License: GNU General Public License v2 or later
 == Changelog ==
 
 = 1.0 =
-* Released: November 14, 2017
+* Released: February 12, 2018
 
-https://codex.wordpress.org/Twenty_Seventeen_Theme_Changelog#Version_1.4
+https://github.com/morethemesbaby/log-lolla-theme
