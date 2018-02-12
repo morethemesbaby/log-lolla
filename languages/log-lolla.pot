@@ -1,0 +1,55 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Log Lolla\n"
+"POT-Creation-Date: 2017-12-30 16:02+0200\n"
+"PO-Revision-Date: 2017-12-30 16:01+0200\n"
+"Last-Translator: \n"
+"Language-Team: Mo' Themes Baby <hello@mothemes.baby>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: esc_html_x\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+
+#: inc/template-functions.php:20 inc/template-functions.php:40
+#: inc/template-tags.php:335
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: inc/template-tags.php:19
+msgid "Featured"
+msgstr ""
+
+#: inc/template-tags.php:253
+msgid "Use the `Header Menu` widget to define what content goes here"
+msgstr ""
+
+#: inc/template-tags.php:268
+msgid "&infin;"
+msgstr ""
+
+#: inc/template-tags.php:285
+msgid "status update by "
+msgstr ""
+
+#: inc/template-tags.php:302
+#, php-format
+msgid "by %s"
+msgstr ""
+
+#: inc/template-tags.php:344
+#, php-format
+msgid ", %s"
+msgstr ""
+
+#: inc/template-tags.php:377
+msgid ", "
+msgstr ""
