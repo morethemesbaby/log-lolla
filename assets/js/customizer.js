@@ -21,6 +21,20 @@
 	} );
 
 
+	// Footer copyright
+	wp.customize( 'footer_copyright', function( value ) {
+		value.bind( function( to ) {
+			$( '.footer-copyright .link' ).text( to );
+		} );
+	} );
+	// Footer copyright link
+	wp.customize( 'footer_copyright_link', function( value ) {
+		value.bind( function( to ) {
+			$( '.footer-copyright .link' ).attr( 'href', to );
+		} );
+	} );
+
+
 	// Header text color.
 	wp.customize( 'header_textcolor', function( value ) {
 		value.bind( function( to ) {

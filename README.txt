@@ -17,7 +17,7 @@ It supports all default post formats—aside, gallery, link, image, quote, statu
 
 Log Lolla aims to be the single destination, the hub of all content you publish on the web. Instead of scattering your thoughts, inspiration, fun, things to learn, status updates—you name it—on third party networks like Twitter, Tumblr, Instagram—you can collect them into a single space and distribute anywhere.
 
-For more information about Log Lolla please go to https://morethemes.baby/log-lolla-demo/.
+For more information about Log Lolla please go to https://morethemes.baby/themes/log-lolla
 
 == Installation ==
 

@@ -7,14 +7,16 @@
    * @package Log_Lolla
    */
 ?>
-<aside class="footer-copyright">
-  <h3 hidden>Footer copyright</h3>
+<?php if ( get_theme_mod( 'footer_copyright_display' ) ) { ?>
+  <aside class="footer-copyright">
+    <h3 hidden>Footer copyright</h3>
 
-  <div class="text">
-    &copy;
-    <?php echo date( 'Y' ) ?>
-    <a class="link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ) ?>">
-      <?php bloginfo( 'name' ) ?>
-    </a>
-  </div>
-</aside>
+    <div class="text">
+      &copy;
+      <?php echo date( 'Y' ) ?>
+      <a class="link" href="<?php echo esc_url( get_theme_mod( 'footer_copyright_link' ) ); ?>" title="<?php get_theme_mod( 'footer_copyright' ) ?>">
+        <?php echo get_theme_mod( 'footer_copyright' ) ?>
+      </a>
+    </div>
+  </aside>
+<?php }  ?>
