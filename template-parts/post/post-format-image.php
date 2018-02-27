@@ -12,9 +12,9 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'article post-format-image' ); ?>>
-	<?php get_template_part( 'template-parts/article/article', 'sticky' ); ?>
-	<?php get_template_part( 'template-parts/article/article', 'title' ); ?>
-	<?php get_template_part( 'template-parts/article/article', 'first-image' ); ?>
-	<?php get_template_part( 'template-parts/article/article', 'permalink-if-no-title' ); ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'post post-format-image' ); ?>>
+	<?php get_template_part( 'template-parts/post/parts/post', 'sticky' ); ?>
+	<?php get_template_part( 'template-parts/post/parts/post', 'title' ); ?>
+	<?php get_template_part( 'template-parts/post/parts/post', 'first-image' ); ?>
+	<?php get_template_part( 'template-parts/post/parts/post', 'permalink-if-no-title' ); ?>
 </article><!-- #post-<?php the_ID(); ?> -->

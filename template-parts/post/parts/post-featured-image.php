@@ -9,7 +9,7 @@
 ?>
 
 <?php if ( has_post_thumbnail() ): ?>
-<aside class="article-featured-image">
+<aside class="post-featured-image">
   <h3 hidden>Article Featured Image</h3>
 
   <figure class="figure">

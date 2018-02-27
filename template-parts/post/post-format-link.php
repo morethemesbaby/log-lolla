@@ -22,20 +22,20 @@
 	$title = log_lolla_get_link_title_for_link_post_format( $url );
 	$arrow = log_lolla_get_arrow_html( 'right' );
 	$post_klass_array = array(
-		'article',
+		'post',
 		'post-format-link',
 		$klass
 	);
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class($post_klass_array); ?>>
-	<?php get_template_part( 'template-parts/article/article', 'sticky' ); ?>
+	<?php get_template_part( 'template-parts/post/parts/post', 'sticky' ); ?>
 
-	<h3 class="article-title">
+	<h3 class="post-title">
 		<a class="link <?php echo esc_attr( $klass ); ?>" title="<?php echo esc_attr( $title ); ?>" href="<?php echo esc_url( $url ); ?>">
 			<?php echo $title . $arrow ; ?>
 		</a>
 	</h3>
 
-	<?php get_template_part( 'template-parts/article/article', 'permalink-if-link-is-external' ); ?>
+	<?php get_template_part( 'template-parts/post/parts/post', 'permalink-if-link-is-external' ); ?>
 </article><!-- #post-<?php the_ID(); ?> -->

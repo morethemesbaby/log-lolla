@@ -9,7 +9,7 @@
    */
 ?>
 
-<aside class="article-excerpt">
+<aside class="post-excerpt">
   <h3 hidden>Article excerpt</h3>
 
   <div class="text">

@@ -8,7 +8,7 @@
    */
 ?>
 
-<aside class="article-content">
+<aside class="post-content">
   <h3 hidden>Article content</h3>
 
   <div class="text">

@@ -21,7 +21,7 @@
 ?>
 
 <?php if ( ! empty( $link_pages ) ) { ?>
-  <nav class="article-paginated-content">
+  <nav class="post-paginated-content">
     <h3 hidden>Paginated content navigation</h3>
 
     <div class="text">

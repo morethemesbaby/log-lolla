@@ -8,7 +8,7 @@
    */
 ?>
 
-<aside class="article-gallery">
+<aside class="post-gallery">
   <h3 hidden>Article gallery</h3>
 
   <?php

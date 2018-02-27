@@ -10,8 +10,8 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'article post-format-aside' ); ?>>
-	<?php get_template_part( 'template-parts/article/article', 'sticky' ); ?>
-	<?php get_template_part( 'template-parts/article/article', 'content' ); ?>
-	<?php get_template_part( 'template-parts/article/article', 'permalink' ); ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'post post-format-aside' ); ?>>
+	<?php get_template_part( 'template-parts/post/parts/post', 'sticky' ); ?>
+	<?php get_template_part( 'template-parts/post/parts/post', 'content' ); ?>
+	<?php get_template_part( 'template-parts/post/parts/post', 'permalink' ); ?>
 </article><!-- #post-<?php the_ID(); ?> -->

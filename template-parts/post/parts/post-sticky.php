@@ -1,6 +1,6 @@
 <?php
   /**
-   * Displaying a sticky article
+   * Displaying a sticky post
    *
    * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
    *
@@ -10,7 +10,7 @@
 
 <?php
   if ( is_sticky() ) { ?>
-    <div class="article-sticky">
+    <div class="post-sticky">
       <span class="text">
         <?php echo log_lolla_sticky_post_text(); ?>
       </span>

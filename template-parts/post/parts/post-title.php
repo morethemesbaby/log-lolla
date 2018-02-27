@@ -10,7 +10,7 @@
 
 <?php
   the_title(
-    '<h3 class="article-title"><a class="link" href="' . esc_url( get_permalink() ) . '" title="' . the_title_attribute( 'echo=0') . '">',
+    '<h3 class="post-title"><a class="link" href="' . esc_url( get_permalink() ) . '" title="' . the_title_attribute( 'echo=0') . '">',
     '</a></h3>'
   );
 ?>

@@ -8,7 +8,7 @@
    */
 ?>
 
-<aside class="article-first-image">
+<aside class="post-first-image">
   <h3 hidden>Article First Image</h3>
 
   <figure class="figure">

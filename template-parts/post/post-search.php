@@ -9,15 +9,15 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'article' ); ?>>
-	<?php get_template_part( 'template-parts/article/article', 'sticky' ); ?>
-	<?php get_template_part( 'template-parts/article/article', 'title' ); ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'post' ); ?>>
+	<?php get_template_part( 'template-parts/post/parts/post', 'sticky' ); ?>
+	<?php get_template_part( 'template-parts/post/parts/post', 'title' ); ?>
 	<?php
 		$has_title = the_title_attribute( 'echo=0');
 
 		if (! $has_title ) {
-			get_template_part( 'template-parts/article/article', 'permalink' );
+			get_template_part( 'template-parts/post/parts/post', 'permalink' );
 		}
 	?>
-	<?php get_template_part( 'template-parts/article/article', 'date' ); ?>
+	<?php get_template_part( 'template-parts/post/parts/post', 'date' ); ?>
 </article><!-- #post-<?php the_ID(); ?> -->

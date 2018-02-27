@@ -14,23 +14,23 @@
 <?php
 	$post_klass = log_lolla_post_class();
 	$post_klass_array = array(
-		'article',
+		'post',
 		'post-format-standard',
 		$post_klass
 	);
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class($post_klass_array); ?>>
-	<?php get_template_part( 'template-parts/article/article', 'sticky' ); ?>
-	<?php get_template_part( 'template-parts/article/article', 'title' ); ?>
-	<?php get_template_part( 'template-parts/article/article', 'featured-image' ); ?>
+	<?php get_template_part( 'template-parts/post/parts/post', 'sticky' ); ?>
+	<?php get_template_part( 'template-parts/post/parts/post', 'title' ); ?>
+	<?php get_template_part( 'template-parts/post/parts/post', 'featured-image' ); ?>
 	<?php
 		if ( ! is_single() && has_excerpt() ) {
-			get_template_part( 'template-parts/article/article', 'excerpt' );
+			get_template_part( 'template-parts/post/parts/post', 'excerpt' );
 		} else {
-			get_template_part( 'template-parts/article/article', 'content' );
-			get_template_part( 'template-parts/article/article', 'paginated-content' );
+			get_template_part( 'template-parts/post/parts/post', 'content' );
+			get_template_part( 'template-parts/post/parts/post', 'paginated-content' );
 		}
 	?>
-	<?php get_template_part( 'template-parts/article/article', 'permalink-if-no-title' ); ?>
+	<?php get_template_part( 'template-parts/post/parts/post', 'permalink-if-no-title' ); ?>
 </article><!-- #post-<?php the_ID(); ?> -->

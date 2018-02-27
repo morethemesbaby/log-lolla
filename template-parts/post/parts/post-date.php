@@ -1,6 +1,6 @@
 <?php
   /**
-   * Displaying post edit link
+   * Displaying post date
    *
    * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
    *
@@ -8,8 +8,8 @@
    */
 ?>
 
-<aside class="article-edit-link">
-  <h3 hidden>Article edit link</h3>
+<aside class="post-date">
+  <h3 hidden>Article date</h3>
 
-  <?php log_lolla_post_edit_link(); ?>
+  <?php log_lolla_post_date(); ?>
 </aside>

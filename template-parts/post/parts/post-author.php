@@ -1,6 +1,6 @@
 <?php
   /**
-   * Displaying post permalink
+   * Displaying post author
    *
    * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
    *
@@ -8,8 +8,8 @@
    */
 ?>
 
-<aside class="article-permalink">
-  <h3 hidden>Article permalink</h3>
+<aside class="post-author">
+  <h3 hidden>Article author</h3>
 
-  <?php log_lolla_post_permalink(); ?>
+  <?php log_lolla_post_author(); ?>
 </aside>
