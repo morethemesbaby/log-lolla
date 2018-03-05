@@ -503,6 +503,10 @@ html body {
     width: 100%;
     padding-bottom: 0.74em;
     border-bottom: 1px solid; }
+  html body select {
+    border: 1px solid;
+    width: 100%;
+    padding: 0.37em; }
   html body label {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1399,9 +1403,15 @@ html body {
       html body .content .post .post-featured-image figure {
         border-top: 1px solid;
         border-bottom: 1px solid;
-        line-height: 0; }
+        line-height: 0;
+        width: 100%;
+        height: auto;
+        display: block; }
         html body .content .post .post-featured-image figure img {
-          border: 1px solid; }
+          border: 1px solid;
+          width: 100%;
+          height: auto;
+          display: block; }
         html body .content .post .post-featured-image figure figcaption {
           display: none !important; }
       html body .content .post .post-excerpt .text {
@@ -3101,6 +3111,9 @@ html body {
           display: none; }
       html body .content .post.post-format-audio .post-content {
         margin-top: 1.48em; }
+        html body .content .post.post-format-audio .post-content .mejs-horizontal-volume-slider {
+          color: #fff;
+          background-color: #000; }
       @media only screen and (max-width: 767.9px) {
         html body .content .post.post-format-video .post-content .text iframe {
           height: auto; } }
@@ -3257,6 +3270,11 @@ html body {
           html body .content .post.post-format-quote .post-content .text q {
             border: none;
             padding: 0; }
+        @media only screen and (min-width: 768px) {
+          html body .content .post.post-format-quote .post-content {
+            font-size: 1.333em; }
+            html body .content .post.post-format-quote .post-content cite {
+              font-size: 0.75em; } }
       @media only screen and (min-width: 768px) {
         html body .content .post.post-format-chat {
           display: -webkit-box;
@@ -4958,6 +4976,9 @@ html body {
         font-size: 1em !important; }
       html body .sidebar .widget.widget_calendar .calendar_wrap {
         overflow-x: auto; }
+      html body .sidebar .widget.widget_media_audio .mejs-horizontal-volume-slider {
+        color: #fff;
+        background-color: #000; }
     @media only screen and (max-width: 767.9px) {
       html body .sidebar {
         display: -webkit-box;
