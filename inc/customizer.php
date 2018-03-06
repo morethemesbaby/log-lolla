@@ -5,6 +5,44 @@
  * @package Log_Lolla
  */
 
+
+ /**
+  * No-HTML sanitization callback example.
+  *
+  * - Sanitization: nohtml
+  * - Control: text, textarea, password
+  *
+  * Sanitization callback for 'nohtml' type text inputs. This callback sanitizes `$nohtml`
+  * to remove all HTML.
+  *
+  * NOTE: wp_filter_nohtml_kses() can be passed directly as `$wp_customize->add_setting()`
+  * 'sanitize_callback'. It is wrapped in a callback here merely for example purposes.
+  *
+  * @see wp_filter_nohtml_kses() https://developer.wordpress.org/reference/functions/wp_filter_nohtml_kses/
+  *
+  * @param string $nohtml The no-HTML content to sanitize.
+  * @return string Sanitized no-HTML content.
+  */
+ function log_lolla_sanitize_nohtml( $nohtml ) {
+ 	return wp_filter_nohtml_kses( $nohtml );
+ }
+
+
+/**
+ * Checkbox sanitization callback example.
+ *
+ * Sanitization callback for 'checkbox' type controls. This callback sanitizes `$checked`
+ * as a boolean value, either TRUE or FALSE.
+ *
+ * @param bool $checked Whether the checkbox is checked.
+ * @return bool Whether the checkbox is checked.
+ */
+function log_lolla_sanitize_checkbox( $checked ) {
+	// Boolean check.
+	return ( ( isset( $checked ) && true == $checked ) ? true : false );
+}
+
+
 /**
  * Add postMessage support for site title and description for the Theme Customizer.
  * Also add support for customizing the footer copyright and credits
@@ -23,15 +61,14 @@ function log_lolla_customize_register( $wp_customize ) {
 	  'theme_supports' => '', // Rarely needed.
 	  'default' => get_bloginfo( 'name' ),
 	  'transport' => 'postMessage', // or postMessage
-	  'sanitize_callback' => '',
-	  'sanitize_js_callback' => '', // Basically to_json.
+	  'sanitize_callback' => 'log_lolla_sanitize_nohtml',
 	) );
 
 	$wp_customize->add_control( 'footer_copyright', array(
 	  'type' => 'text',
 	  'priority' => 10, // Within the section.
 	  'section' => 'title_tagline', // Required, core or custom.
-	  'label' => __( 'Copyright text in footer' ),
+	  'label' => __( 'Copyright text in footer', 'log-lolla' ),
 	  'description' => '',
 	  'active_callback' => 'is_front_page',
 	) );
@@ -41,17 +78,16 @@ function log_lolla_customize_register( $wp_customize ) {
 	  'type' => 'theme_mod', // or 'option'
 	  'capability' => 'edit_theme_options',
 	  'theme_supports' => '', // Rarely needed.
-	  'default' => get_bloginfo( 'url' ),
+	  'default' => esc_url( home_url() ),
 	  'transport' => 'postMessage', // or postMessage
-	  'sanitize_callback' => '',
-	  'sanitize_js_callback' => '', // Basically to_json.
+	  'sanitize_callback' => 'esc_url_raw',
 	) );
 
 	$wp_customize->add_control( 'footer_copyright_link', array(
 	  'type' => 'text',
 	  'priority' => 10, // Within the section.
 	  'section' => 'title_tagline', // Required, core or custom.
-	  'label' => __( 'Copyright link in footer' ),
+	  'label' => __( 'Copyright link in footer', 'log-lolla' ),
 	  'description' => '',
 	  'active_callback' => 'is_front_page',
 	) );
@@ -63,15 +99,14 @@ function log_lolla_customize_register( $wp_customize ) {
 	  'theme_supports' => '', // Rarely needed.
 	  'default' => '1',
 	  'transport' => 'postMessage', // or postMessage
-	  'sanitize_callback' => '',
-	  'sanitize_js_callback' => '', // Basically to_json.
+	  'sanitize_callback' => 'log_lolla_sanitize_checkbox',
 	) );
 
 	$wp_customize->add_control( 'footer_copyright_display', array(
 	  'type' => 'checkbox',
 	  'priority' => 10, // Within the section.
 	  'section' => 'title_tagline', // Required, core or custom.
-	  'label' => __( 'Display footer copyright' ),
+	  'label' => __( 'Display footer copyright', 'log-lolla' ),
 	  'description' => '',
 	  'active_callback' => 'is_front_page',
 	) );
@@ -83,16 +118,15 @@ function log_lolla_customize_register( $wp_customize ) {
 	  'theme_supports' => '', // Rarely needed.
 	  'default' => '1',
 	  'transport' => 'postMessage', // or postMessage
-	  'sanitize_callback' => '',
-	  'sanitize_js_callback' => '', // Basically to_json.
+	  'sanitize_callback' => 'log_lolla_sanitize_checkbox',
 	) );
 
 	$wp_customize->add_control( 'footer_credits_display', array(
 	  'type' => 'checkbox',
 	  'priority' => 10, // Within the section.
 	  'section' => 'title_tagline', // Required, core or custom.
-	  'label' => __( 'Display footer credits' ),
-	  'description' => __( 'Like Powered By Wordpress and the Log Lolla Theme' ),
+	  'label' => __( 'Display footer credits', 'log-lolla' ),
+	  'description' => __( 'Like Powered By Wordpress and the Log Lolla Theme', 'log-lolla' ),
 	  'active_callback' => 'is_front_page',
 	) );
 
@@ -152,7 +186,7 @@ function log_lolla_customize_partial_footer_copyright() {
  * @return void
  */
 function log_lolla_customize_partial_footer_copyright_link() {
-	bloginfo( 'url' );
+	esc_url( home_url() );
 }
 
 

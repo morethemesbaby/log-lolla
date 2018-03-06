@@ -12,7 +12,7 @@
   /**
    * Cannot be wrapped into an <ul>,<li> structure ....
    */
-  $link_pages = wp_link_pages( array(
+  $wp_link_pages = wp_link_pages( array(
     'before' => '<span class="page-links-title">' . __( 'Pages:', 'log-lolla' ) . '</span><div class="ul page-links">',
     'after' => '</div>',
     'separator' => '&nbsp;',
@@ -20,12 +20,12 @@
   ) );
 ?>
 
-<?php if ( ! empty( $link_pages ) ) { ?>
+<?php if ( ! empty( $wp_link_pages ) ) { ?>
   <nav class="post-paginated-content">
     <h3 hidden>Paginated content navigation</h3>
 
     <div class="text">
-      <?php echo $link_pages; ?>
+      <?php echo $wp_link_pages; ?>
     </div>
   </nav>
 <?php } ?>

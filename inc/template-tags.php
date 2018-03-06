@@ -281,13 +281,11 @@ if ( ! function_exists( 'log_lolla_post_permalink' ) ) {
    *
    */
   function log_lolla_post_permalink() {
-    $permalink = sprintf(
-      '<a class="link" href="' . esc_url( get_permalink() ) . '" title="' . the_title_attribute( 'echo=0') . '">%s</a>',
+    printf(
+      '<div class="permalink"><a class="link" href="' . esc_url( get_permalink() ) . '" title="' . the_title_attribute( 'echo=0') . '">%s</a></div>',
       /* translators: %s: post permalink. */
       esc_html_x( '&infin;', 'post permalink', 'log-lolla' )
     );
-
-    echo '<div class="permalink">' . $permalink . '</div>';
   }
 }
 
@@ -298,13 +296,11 @@ if ( ! function_exists( 'log_lolla_post_author_linking_to_post' ) ) {
    *
    */
   function log_lolla_post_author_linking_to_post() {
-    $byline = sprintf(
-      '<span class="author vcard"><a class="link" href="' . esc_url( get_permalink() ) . '" title="' . the_title_attribute( 'echo=0') . '">%s' . esc_html( get_the_author() ) . '</a></span>',
+    printf(
+      '<div class="byline"><span class="author vcard"><a class="link" href="' . esc_url( get_permalink() ) . '" title="' . the_title_attribute( 'echo=0') . '">%s' . esc_html( get_the_author() ) . '</a></span></div>',
       /* translators: %s: status update by. */
       esc_html_x( 'status update by ', 'status update by', 'log-lolla' )
     );
-
-    echo '<div class="byline">' . $byline . '</div>';
   }
 }
 
@@ -316,13 +312,11 @@ if ( ! function_exists( 'log_lolla_post_author' ) ) {
    *
    */
   function log_lolla_post_author() {
-    $byline = sprintf(
+    printf(
 			/* translators: %s: post author. */
 			esc_html_x( 'by %s', 'post author', 'log-lolla' ),
-			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
+			'<div class="byline"><span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span></div>'
 		);
-
-    echo '<div class="byline">' . $byline . '</div>';
   }
 }
 
@@ -335,13 +329,11 @@ if ( ! function_exists( 'log_lolla_post_date_and_time' ) ) {
    * Preferably to 'M j, y'
    */
   function log_lolla_post_date_and_time() {
-    $published = sprintf(
-			'<time class="date published" datetime="%1$s">%2$s</time>',
+    printf(
+			'<div class="posted-on"><time class="date published" datetime="%1$s">%2$s</time></div>',
 			esc_attr( get_the_date( 'c' ) . ', ' .  get_the_time( 'c' ) ),
 			esc_html( get_the_date() . ', ' . get_the_time() )
 		);
-
-    echo '<div class="posted-on">' . $published . '</div>';
   }
 }
 
@@ -355,39 +347,11 @@ if ( ! function_exists( 'log_lolla_post_date' ) ) {
    * Preferably to 'M j, y'
    */
   function log_lolla_post_date() {
-    $published = sprintf(
-			'<time class="date published" datetime="%1$s">%2$s</time>',
+    printf(
+			'<div class="posted-on"><time class="date published" datetime="%1$s">%2$s</time></div>',
 			esc_attr( get_the_date( 'c' ) ),
 			esc_html( get_the_date() )
 		);
-
-		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-			$updated = sprintf(
-				'<time class="date updated" datetime="%1$s">%2$s</time>',
-				esc_attr( get_the_modified_date( 'c' ) ),
-				esc_html( get_the_modified_date() )
-			);
-		}
-
-		$posted_on = sprintf(
-      '%1$s %2$s',
-			/* translators: %s: post date. */
-			esc_html_x( ' ', 'post date', 'log-lolla' ),
-			$published
-		);
-
-
-    // TODO: removing updated date since it's ugly
-    if ( false && isset( $updated ) ) {
-			$posted_on .= sprintf(
-        '%1$s %2$s',
-				/* translators: %s: post modified date. */
-				esc_html_x( ',', 'post modified date', 'log-lolla' ),
-				$updated
-			);
-		}
-
-    echo '<div class="posted-on">' . $posted_on . '</div>';
   }
 }
 

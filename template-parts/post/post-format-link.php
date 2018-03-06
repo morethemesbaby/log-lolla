@@ -33,7 +33,7 @@
 
 	<h3 class="post-title">
 		<a class="link <?php echo esc_attr( $klass ); ?>" title="<?php echo esc_attr( $title ); ?>" href="<?php echo esc_url( $url ); ?>">
-			<?php echo $title . $arrow ; ?>
+			<?php echo esc_attr( $title . $arrow ); ?>
 		</a>
 	</h3>
 

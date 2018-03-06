@@ -12,7 +12,7 @@
   if ( is_sticky() ) { ?>
     <div class="post-sticky">
       <span class="text">
-        <?php echo log_lolla_sticky_post_text(); ?>
+        <?php echo esc_attr( log_lolla_sticky_post_text() ); ?>
       </span>
     </div>
 <?php } ?>

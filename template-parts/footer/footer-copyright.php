@@ -13,9 +13,9 @@
 
     <div class="text">
       &copy;
-      <?php echo date( 'Y' ) ?>
-      <a class="link" href="<?php echo esc_url( get_theme_mod( 'footer_copyright_link' ) ); ?>" title="<?php get_theme_mod( 'footer_copyright' ) ?>">
-        <?php echo get_theme_mod( 'footer_copyright' ) ?>
+      <?php echo esc_attr( date( 'Y' ) ) ?>
+      <a class="link" href="<?php echo esc_url( get_theme_mod( 'footer_copyright_link' ) ); ?>" title="<?php esc_attr( get_theme_mod( 'footer_copyright' ) ) ?>">
+        <?php echo esc_attr( get_theme_mod( 'footer_copyright' ) ) ?>
       </a>
     </div>
   </aside>

@@ -15,7 +15,7 @@
     }
   ?>
 
-  <header class="header <?php echo $klass; ?>">
+  <header class="header <?php echo esc_attr( $klass ); ?>">
     <?php get_template_part( 'template-parts/header/header', 'image' ); ?>
     <?php get_template_part( 'template-parts/header/header', 'logo' ); ?>
     <?php get_template_part( 'template-parts/header/header', 'title' ); ?>

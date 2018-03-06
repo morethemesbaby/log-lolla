@@ -1,7 +1,7 @@
 === Log Lolla ===
 Contributors: The More Themes Baby team
 Requires at least: WordPress 4.7
-Tested up to: WordPress 5.0-trunk
+Tested up to: WordPress 4.9.4
 Version: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -65,4 +65,4 @@ License: GNU General Public License v2 or later
 = 1.0 =
 * Released: February 12, 2018
 
-https://github.com/morethemesbaby/log-lolla-theme
+https://github.com/morethemesbaby/log-lolla
