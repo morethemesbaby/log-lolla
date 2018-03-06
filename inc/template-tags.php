@@ -313,9 +313,9 @@ if ( ! function_exists( 'log_lolla_post_author' ) ) {
    */
   function log_lolla_post_author() {
     printf(
+      '<div class="byline">%s <span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span></div>',
 			/* translators: %s: post author. */
-			esc_html_x( 'by %s', 'post author', 'log-lolla' ),
-			'<div class="byline"><span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span></div>'
+			esc_html_x( 'by', 'post author', 'log-lolla' )
 		);
   }
 }

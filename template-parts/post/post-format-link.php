@@ -33,7 +33,7 @@
 
 	<h3 class="post-title">
 		<a class="link <?php echo esc_attr( $klass ); ?>" title="<?php echo esc_attr( $title ); ?>" href="<?php echo esc_url( $url ); ?>">
-			<?php echo esc_attr( $title . $arrow ); ?>
+			<?php echo wp_kses_post( $title . $arrow ); ?>
 		</a>
 	</h3>
 
