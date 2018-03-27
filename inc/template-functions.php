@@ -7,7 +7,7 @@
 
 
  /**
-  * Add 'continue reading' link text to content (for the more tag)
+  * Add 'continue reading' link text to post content
   *
   * @return string
   */
@@ -26,7 +26,7 @@
 
 
  /**
-  * Add 'continue reading' link text to excerpt
+  * Add 'continue reading' link text to post excerpt
   *
   * @param [string] $excerpt the post excerpt
   * @return string
@@ -35,7 +35,7 @@
    $arrow = log_lolla_get_arrow_html( 'right' );
 
 	 $read_more = sprintf(
-		 '<p><a class="link" href="' . esc_url( get_permalink() ) . '" title="' . the_title_attribute( 'echo=0') . '">%1$s %2$s</a></p>',
+		 '<p><a class="more-link" href="' . esc_url( get_permalink() ) . '" title="' . the_title_attribute( 'echo=0') . '">%1$s %2$s</a></p>',
      /* translators: %s: continue reading. */
 		 esc_html_x( 'Continue reading', 'continue-reading', 'log-lolla' ),
      $arrow

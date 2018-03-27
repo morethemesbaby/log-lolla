@@ -4,7 +4,7 @@
  Description:  Log Lolla is a classic blog theme bringing back the joy of blogging. Supports all default post formats and presents them with a brutalist aesthetics.
  Author:       More Themes Baby
  Author URI:   https://morethemes.baby
- Version:      1.0.0
+ Version:      1.0.1
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         blog, full-width-template, post-formats
@@ -1207,6 +1207,11 @@ html body {
         transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
         html body .content .post .post-title .link:hover, html body .content .post .post-title .link:active {
           text-decoration: line-through; }
+      html body .content .post .post-title .text {
+        font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        word-wrap: break-word; }
       html body .content .post .post-author .link,
       html body .content .post .post-author a {
         color: #000;
@@ -1861,16 +1866,16 @@ html body {
         html body .content .post .post-excerpt .text iframe {
           border: 1px solid;
           border: 1px solid !important; }
-        html body .content .post .post-excerpt .text .link {
+        html body .content .post .post-excerpt .text .more-link {
+          font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
+          font-weight: normal;
+          font-style: normal;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
           -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center; }
-          html body .content .post .post-excerpt .text .link .arrow-with-triangle {
+              flex-wrap: wrap; }
+          html body .content .post .post-excerpt .text .more-link .arrow-with-triangle {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -1886,37 +1891,37 @@ html body {
             -webkit-transform: rotate(0deg);
                     transform: rotate(0deg);
             margin-left: 0.74em; }
-            html body .content .post .post-excerpt .text .link .arrow-with-triangle__line {
+            html body .content .post .post-excerpt .text .more-link .arrow-with-triangle__line {
               width: calc(3.7em);
               border-bottom: 1px solid; }
-            html body .content .post .post-excerpt .text .link .arrow-with-triangle__triangle {
+            html body .content .post .post-excerpt .text .more-link .arrow-with-triangle__triangle {
               width: 0;
               height: 0;
               border-style: solid;
               border-width: 0.74em 0 0.74em 0.74em;
               border-color: transparent transparent transparent #000; }
-              html body .content .post .post-excerpt .text .link .arrow-with-triangle__triangle--right {
+              html body .content .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--right {
                 border-width: 0.74em 0 0.74em 0.74em;
                 border-color: transparent transparent transparent #000; }
-              html body .content .post .post-excerpt .text .link .arrow-with-triangle__triangle--left {
+              html body .content .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--left {
                 border-width: 0.74em 0.74em 0.74em 0;
                 border-color: transparent #000 transparent transparent; }
-              html body .content .post .post-excerpt .text .link .arrow-with-triangle__triangle--top {
+              html body .content .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--top {
                 border-width: 0 0.74em 0.74em 0.74em;
                 border-color: transparent transparent #000 transparent; }
-              html body .content .post .post-excerpt .text .link .arrow-with-triangle__triangle--bottom {
+              html body .content .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--bottom {
                 border-width: 0.74em 0.74em 0 0.74em;
                 border-color: #000 transparent transparent transparent; }
-            html body .content .post .post-excerpt .text .link .arrow-with-triangle--right {
+            html body .content .post .post-excerpt .text .more-link .arrow-with-triangle--right {
               -webkit-transform: rotate(0deg);
                       transform: rotate(0deg); }
-            html body .content .post .post-excerpt .text .link .arrow-with-triangle--left {
+            html body .content .post .post-excerpt .text .more-link .arrow-with-triangle--left {
               -webkit-transform: rotate(180deg);
                       transform: rotate(180deg); }
-            html body .content .post .post-excerpt .text .link .arrow-with-triangle--top {
+            html body .content .post .post-excerpt .text .more-link .arrow-with-triangle--top {
               -webkit-transform: rotate(-90deg);
                       transform: rotate(-90deg); }
-            html body .content .post .post-excerpt .text .link .arrow-with-triangle--bottom {
+            html body .content .post .post-excerpt .text .more-link .arrow-with-triangle--bottom {
               -webkit-transform: rotate(90deg);
                       transform: rotate(90deg); }
       html body .content .post .post-content .text {
@@ -2559,59 +2564,66 @@ html body {
             width: 100%; }
           html body .content .post .post-content .text .gallery figure .gallery-icon {
             line-height: 0; }
-        html body .content .post .post-content .text .arrow-with-triangle {
+        html body .content .post .post-content .text .more-link {
+          font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
+          font-weight: normal;
+          font-style: normal;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
-          -ms-flex-wrap: nowrap;
-              flex-wrap: nowrap;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          width: 4.44em;
-          -webkit-transform: rotate(0deg);
-                  transform: rotate(0deg);
-          margin-left: 0.74em; }
-          html body .content .post .post-content .text .arrow-with-triangle__line {
-            width: calc(3.7em);
-            border-bottom: 1px solid; }
-          html body .content .post .post-content .text .arrow-with-triangle__triangle {
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 0.74em 0 0.74em 0.74em;
-            border-color: transparent transparent transparent #000; }
-            html body .content .post .post-content .text .arrow-with-triangle__triangle--right {
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          html body .content .post .post-content .text .more-link .arrow-with-triangle {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            width: 4.44em;
+            -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+            margin-left: 0.74em; }
+            html body .content .post .post-content .text .more-link .arrow-with-triangle__line {
+              width: calc(3.7em);
+              border-bottom: 1px solid; }
+            html body .content .post .post-content .text .more-link .arrow-with-triangle__triangle {
+              width: 0;
+              height: 0;
+              border-style: solid;
               border-width: 0.74em 0 0.74em 0.74em;
               border-color: transparent transparent transparent #000; }
-            html body .content .post .post-content .text .arrow-with-triangle__triangle--left {
-              border-width: 0.74em 0.74em 0.74em 0;
-              border-color: transparent #000 transparent transparent; }
-            html body .content .post .post-content .text .arrow-with-triangle__triangle--top {
-              border-width: 0 0.74em 0.74em 0.74em;
-              border-color: transparent transparent #000 transparent; }
-            html body .content .post .post-content .text .arrow-with-triangle__triangle--bottom {
-              border-width: 0.74em 0.74em 0 0.74em;
-              border-color: #000 transparent transparent transparent; }
-          html body .content .post .post-content .text .arrow-with-triangle--right {
-            -webkit-transform: rotate(0deg);
-                    transform: rotate(0deg); }
-          html body .content .post .post-content .text .arrow-with-triangle--left {
-            -webkit-transform: rotate(180deg);
-                    transform: rotate(180deg); }
-          html body .content .post .post-content .text .arrow-with-triangle--top {
-            -webkit-transform: rotate(-90deg);
-                    transform: rotate(-90deg); }
-          html body .content .post .post-content .text .arrow-with-triangle--bottom {
-            -webkit-transform: rotate(90deg);
-                    transform: rotate(90deg); }
-        html body .content .post .post-content .text .more-link {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex; }
+              html body .content .post .post-content .text .more-link .arrow-with-triangle__triangle--right {
+                border-width: 0.74em 0 0.74em 0.74em;
+                border-color: transparent transparent transparent #000; }
+              html body .content .post .post-content .text .more-link .arrow-with-triangle__triangle--left {
+                border-width: 0.74em 0.74em 0.74em 0;
+                border-color: transparent #000 transparent transparent; }
+              html body .content .post .post-content .text .more-link .arrow-with-triangle__triangle--top {
+                border-width: 0 0.74em 0.74em 0.74em;
+                border-color: transparent transparent #000 transparent; }
+              html body .content .post .post-content .text .more-link .arrow-with-triangle__triangle--bottom {
+                border-width: 0.74em 0.74em 0 0.74em;
+                border-color: #000 transparent transparent transparent; }
+            html body .content .post .post-content .text .more-link .arrow-with-triangle--right {
+              -webkit-transform: rotate(0deg);
+                      transform: rotate(0deg); }
+            html body .content .post .post-content .text .more-link .arrow-with-triangle--left {
+              -webkit-transform: rotate(180deg);
+                      transform: rotate(180deg); }
+            html body .content .post .post-content .text .more-link .arrow-with-triangle--top {
+              -webkit-transform: rotate(-90deg);
+                      transform: rotate(-90deg); }
+            html body .content .post .post-content .text .more-link .arrow-with-triangle--bottom {
+              -webkit-transform: rotate(90deg);
+                      transform: rotate(90deg); }
+        html body .content .post .post-content .text .wp-embedded-content + p {
+          margin-top: 0; }
       html body .content .post .post-paginated-content {
         width: 100%;
         margin: 1.48em 0;
@@ -4377,9 +4389,6 @@ html body {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; }
-        @media only screen and (max-width: 767.9px) {
-          html body .content .navigation.post-navigation .ul .li + .li {
-            margin-top: 1.48em; } }
       html body .content .navigation.posts-navigation .nav-links .nav-previous a,
       html body .content .navigation.posts-navigation .nav-links .nav-next a {
         display: -webkit-box;
@@ -4453,6 +4462,11 @@ html body {
           background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEElEQVQImWNgYGD4z0AHAABlBAEAGUklEQAAAABJRU5ErkJggg==);
           border-left: none;
           border-right: none; }
+      html body .content.content-single .post .post-title {
+        border-bottom: 1px solid; }
+        html body .content.content-single .post .post-title + .post-featured-image .figure {
+          border-top: none;
+          margin: 0; }
       html body .content.content-single .post .post-permalink {
         display: none; }
     html body .content.content-single .post-footer {
@@ -4493,6 +4507,22 @@ html body {
           html body .content.content-single .post-footer .categories-and-tags .post-categories,
           html body .content.content-single .post-footer .categories-and-tags .post-tags {
             min-width: 30%; } }
+      html body .content.content-single .post-footer .post-edit-link .edit-link {
+        font-size: 0.75em;
+        text-transform: uppercase;
+        letter-spacing: 1.25px;
+        cursor: pointer;
+        border: 1px solid;
+        padding: 0.37em 0.74em; }
+        html body .content.content-single .post-footer .post-edit-link .edit-link .post-edit-link {
+          padding: 0;
+          color: #000;
+          background-color: #fff;
+          text-decoration: none;
+          will-change: text-decoration;
+          transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
+          html body .content.content-single .post-footer .post-edit-link .edit-link .post-edit-link:hover, html body .content.content-single .post-footer .post-edit-link .edit-link .post-edit-link:active {
+            text-decoration: line-through; }
       html body .content.content-single .post-footer .categories-and-tags,
       html body .content.content-single .post-footer .date-and-author,
       html body .content.content-single .post-footer .post-edit-link {
