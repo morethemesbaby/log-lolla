@@ -14,7 +14,9 @@
 get_header(); ?>
 
 	<section class="content content-home">
-		<h3 hidden>Home</h3>
+		<h3 hidden>
+			<?php esc_html_e( 'Home', 'log-lolla' ); ?>
+		</h3>
 
 		<?php
       $query = new WP_Query( 'category_name=to-home-page' );

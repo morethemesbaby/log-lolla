@@ -9,7 +9,9 @@
 ?>
 
 <footer class="footer">
-  <h3 hidden>Footer</h3>
+  <h3 hidden>
+    <?php esc_html_e( 'Footer', 'log-lolla' ); ?>
+  </h3>
 
   <?php get_template_part( 'template-parts/footer/footer', 'navigation' ); ?>
   <?php get_template_part( 'template-parts/footer/footer', 'copyright' ); ?>

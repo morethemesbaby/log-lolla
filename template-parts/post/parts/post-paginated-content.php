@@ -22,7 +22,9 @@
 
 <?php if ( ! empty( $wp_link_pages ) ) { ?>
   <nav class="post-paginated-content">
-    <h3 hidden>Paginated content navigation</h3>
+    <h3 hidden>
+      <?php esc_html_e( 'Post paginated content navigation', 'log-lolla' ) ?>
+    </h3>
 
     <div class="text">
       <?php echo $wp_link_pages; ?>

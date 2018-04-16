@@ -9,7 +9,9 @@
 ?>
 <?php if ( get_theme_mod( 'footer_copyright_display' ) ) { ?>
   <aside class="footer-copyright">
-    <h3 hidden>Footer copyright</h3>
+    <h3 hidden>
+      <?php esc_html_e( 'Footer copyright', 'log-lolla' ); ?>
+    </h3>
 
     <div class="text">
       &copy;

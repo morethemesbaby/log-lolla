@@ -9,7 +9,9 @@
 ?>
 
 <aside class="post-first-image">
-  <h3 hidden>Article First Image</h3>
+  <h3 hidden>
+    <?php esc_html_e( 'Post first image', 'log-lolla' ) ?>
+  </h3>
 
   <figure class="figure">
 		<a class="link" href="<?php echo esc_url( get_permalink() ) ?>" title="<?php the_title_attribute(); ?>">

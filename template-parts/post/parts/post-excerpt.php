@@ -10,7 +10,9 @@
 ?>
 
 <aside class="post-excerpt">
-  <h3 hidden>Article excerpt</h3>
+  <h3 hidden>
+    <?php esc_html_e( 'Post excerpt', 'log-lolla' ) ?>
+  </h3>
 
   <div class="text">
     <?php the_excerpt(); ?>

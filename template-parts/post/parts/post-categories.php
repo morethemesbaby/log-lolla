@@ -10,7 +10,9 @@
 
 <?php if ( has_category() ) { ?>
   <aside class="post-categories">
-    <h3 hidden>Article categories</h3>
+    <h3 hidden>
+      <?php esc_html_e( 'Post categories', 'log-lolla' ) ?>
+    </h3>
 
     <?php log_lolla_post_categories(); ?>
   </aside>

@@ -9,7 +9,9 @@
 ?>
 
 <nav class="navigation post-navigation">
-  <h3 hidden>Post navigation</h3>
+  <h3 hidden>
+    <?php esc_html_e( 'Post navigation', 'log-lolla' ); ?>
+  </h3>
 
   <ul class="ul">
     <li class="li">

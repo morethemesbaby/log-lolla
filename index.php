@@ -15,7 +15,9 @@
 get_header(); ?>
 
 	<section class="content content-index">
-		<h3 hidden>Content</h3>
+		<h3 hidden>
+			<?php esc_html_e( 'Content', 'log-lolla' ); ?>
+		</h3>
 
 		<?php
 		if ( have_posts() ) :

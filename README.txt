@@ -19,6 +19,8 @@ Log Lolla aims to be the single destination, the hub of all content you publish 
 
 For more information about Log Lolla please go to https://morethemes.baby/themes/log-lolla
 
+For a live demo of Log Lolla please visit https://morethemes.baby/log-lolla-demo/
+
 == Installation ==
 
 1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
@@ -62,7 +64,31 @@ License: GNU General Public License v2 or later
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.2 =
+* Released April 16, 2018
+
+Fixed issues:
+
+* Change theme URL to point to a page with information about the theme
+* There are some untranslated strings
+* Post format status needs a title (for the HTML5 Outliner only)
+
+https://github.com/morethemesbaby/log-lolla/releases/tag/v1.0.2
+
+= 1.0.1 =
+* Released: March 26, 2018
+
+Fixed issues:
+
+* Single post title should not be a link
+* Embedded content has a too big upper spacing
+* Continue reading needs a top spacing (when we have 'more' in the post content)
+* Continue Reading is inconsistent and sometimes is broken
+* Navigation links on mobile have inconsistent spacing
+
+https://github.com/morethemesbaby/log-lolla/releases/tag/v1.0.1
+
+= 1.0.0 =
 * Released: February 12, 2018
 
-https://github.com/morethemesbaby/log-lolla
+https://github.com/morethemesbaby/log-lolla/releases/tag/1.0.0

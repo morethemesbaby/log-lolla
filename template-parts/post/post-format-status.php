@@ -11,6 +11,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'post post-format-status' ); ?>>
+	<?php get_template_part( 'template-parts/post/parts/post', 'title' ); ?>
 	<?php get_template_part( 'template-parts/post/parts/post', 'date-and-time' ); ?>
 	<?php get_template_part( 'template-parts/post/parts/post', 'sticky' ); ?>
 	<?php get_template_part( 'template-parts/post/parts/post', 'content' ); ?>

@@ -19,7 +19,9 @@ get_header(); ?>
 		</div>
 
 		<aside class="search">
-			<h3 hidden>Search form</h3>
+			<h3 hidden>
+				<?php esc_html_e( 'Search form', 'log-lolla' ); ?>
+			</h3>
 
 			<?php get_search_form(); ?>
 		</aside>

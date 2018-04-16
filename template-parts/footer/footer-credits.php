@@ -9,7 +9,9 @@
 ?>
 <?php if ( get_theme_mod( 'footer_credits_display' ) ) { ?>
   <aside class="footer-credits">
-    <h3 hidden>Footer credits</h3>
+    <h3 hidden>
+      <?php esc_html_e( 'Footer credits', 'log-lolla' ); ?>
+    </h3>
 
     <div class="text">
       <div class="powered-by">

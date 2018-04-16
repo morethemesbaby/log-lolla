@@ -9,7 +9,9 @@
 ?>
 
 <aside class="post-date">
-  <h3 hidden>Article date</h3>
+  <h3 hidden>
+    <?php esc_html_e( 'Post date', 'log-lolla' ) ?>
+  </h3>
 
   <?php log_lolla_post_date(); ?>
 </aside>

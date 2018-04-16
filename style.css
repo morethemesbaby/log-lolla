@@ -1,6 +1,6 @@
 /*!
  Theme Name:   Log Lolla
- Theme URI:    https://morethemes.baby/log-lolla-demo/
+ Theme URI:    https://morethemes.baby/themes/log-lolla/
  Description:  Log Lolla is a classic blog theme bringing back the joy of blogging. Supports all default post formats and presents them with a brutalist aesthetics.
  Author:       More Themes Baby
  Author URI:   https://morethemes.baby
@@ -3179,6 +3179,8 @@ html body {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         border: none; }
+        html body .content .post.post-format-status .post-title {
+          display: none; }
         html body .content .post.post-format-status .post-content {
           border: 1px solid;
           width: 100%;

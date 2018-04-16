@@ -8,7 +8,9 @@
 ?>
   <?php  if ( function_exists( 'log_lolla_header_menu_contents' ) ) { ?>
     <nav class="header-menu header-menu--closed">
-      <h3 hidden>Header menu</h3>
+      <h3 hidden>
+        <?php esc_html_e( 'Header menu', 'log-lolla' ); ?>
+      </h3>
 
       <?php log_lolla_header_menu_contents(); ?>
     </nav>

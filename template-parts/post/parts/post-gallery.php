@@ -9,7 +9,9 @@
 ?>
 
 <aside class="post-gallery">
-  <h3 hidden>Article gallery</h3>
+  <h3 hidden>
+    <?php esc_html_e( 'Post gallery', 'log-lolla' ) ?>
+  </h3>
 
   <?php
     if ( get_post_gallery() ) :

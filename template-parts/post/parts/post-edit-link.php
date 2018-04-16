@@ -9,7 +9,9 @@
 ?>
 
 <aside class="post-edit-link">
-  <h3 hidden>Article edit link</h3>
+  <h3 hidden>
+    <?php esc_html_e( 'Post edit link', 'log-lolla' ) ?>
+  </h3>
 
   <?php log_lolla_post_edit_link(); ?>
 </aside>

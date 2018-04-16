@@ -9,7 +9,9 @@
 ?>
 
 <aside class="post-author">
-  <h3 hidden>Article author</h3>
+  <h3 hidden>
+    <?php esc_html_e( 'Post author', 'log-lolla' ) ?>
+  </h3>
 
   <?php log_lolla_post_author(); ?>
 </aside>

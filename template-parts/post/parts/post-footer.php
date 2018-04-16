@@ -9,7 +9,9 @@
 ?>
 
 <aside class="post-footer">
-  <h3 hidden>Article footer</h3>
+  <h3 hidden>
+    <?php esc_html_e( 'Post footer', 'log-lolla' ) ?>
+  </h3>
 
   <div class="date-and-author">
     <?php get_template_part( 'template-parts/post/parts/post', 'date' ); ?>

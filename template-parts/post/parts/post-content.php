@@ -9,7 +9,9 @@
 ?>
 
 <aside class="post-content">
-  <h3 hidden>Article content</h3>
+  <h3 hidden>
+    <?php esc_html_e( 'Post content', 'log-lolla' ) ?>
+  </h3>
 
   <div class="text">
     <?php
